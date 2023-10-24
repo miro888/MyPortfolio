@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  .heading {
+    text-align: center;
+    margin-top: 4rem;
+    font-family: $Inter;
+    font-style: normal;
+    font-weight: $Bold;
+    text-transform: capitalize;
+    color: $primaryFontColor;
+
+    h2 {
+      font-size: $secoundLevelSize;
+      margin-bottom: $offSetLevel_2;
+      display: inline-block;
+      border-bottom: 1px solid $white;
+      margin-bottom: 50px;
+
+    }
+
+
+    .projectCard {
+      margin: 20px 20px;
+      @media (max-width: $smTablet) {
+        margin: 0 auto;
+        padding: 3rem ;
+        @media (max-width: $xsDesktop) {
+          // padding: 1rem;
+         
+      }
+    }
+
+      a {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+
+        img {
+          width: 200px;
+          height: 400px;
+        }
+      }
+
+      h3 {
+        margin: 10px 0;
+      }
+
+
+    }
+  }
+}

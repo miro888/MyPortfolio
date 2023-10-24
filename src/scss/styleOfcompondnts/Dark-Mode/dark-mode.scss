@@ -1,0 +1,183 @@
+@import '../../variables.scss';
+
+.dark-mode {
+    background-color: #212B38;
+    color: $white;
+
+    .sidebarLeft {
+        background-color: #212B38;
+    }
+
+    .middle {
+        .about {
+            background-color: transparent;
+
+            p {
+                background-color: #212B38;
+            }
+        }
+
+        .education {
+
+            .heading {
+                color: $white;
+
+                p {
+                    color: $secondaryFontColor;
+
+                }
+            }
+
+            .container {
+                background-color: transparent;
+
+                .cards {
+                    border-color: $white;
+                    border-style: solid;
+                    border-radius: 20px;
+
+                    .left-card {
+                        h3 {
+                            color: $white;
+                        }
+
+                        p {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sideBarRight {
+        background-color: transparent;
+        @media (max-width: $xsDesktop) {
+            background-color: #212B38;            
+        }
+        .wrapper {
+            .icons {
+                .modeButton {
+                    background-color: $white;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-bottom: 2.5rem;
+                    margin-top: 1rem;
+
+                    .darkModeButtonColor {
+                        width: 30px;
+                        height: 30px;
+                        transform: scale(1.5)
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+    // MY SERVICES
+
+
+    .myServices {
+
+        h2 {
+            color: $white;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .cardsWrapper {
+
+            .cards {
+                .serviceCard {
+                    background-color: transparent;
+                    border: $secondaryFontColor 2px solid;
+
+                    border-radius: 20px;
+
+
+                    .cardTitle {
+                        color: $white;
+                    }
+
+                    .cardParagraph {
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+
+    .projects {
+        h2 {
+            color: $white;
+        }
+
+        h3 {
+            color: $white;
+        }
+    }
+
+    .langInfo {
+        h2 {
+            color: $white;
+        }
+    }
+
+    .extraSkillsInfo {
+        h2 {
+            color: $white;
+        }
+    }
+
+
+
+    .containerForm {
+
+        .mainContainer {
+
+            .cardLeft {
+                background-color: transparent;
+
+                label {
+                    color: $secondaryFontColor;
+                }
+
+                input {
+                    background-color: #F0F0F6;
+                    border-color: transparent;
+
+                }
+
+                textarea {
+                    border-color: transparent;
+                    background-color: #F0F0F6;
+                }
+
+                button {
+                    background-color: $primaryColor;
+                    border-color: transparent;
+                }
+            }
+
+            .mainCard {
+                .cardRight {
+                    background-color: transparent;
+
+                    p {
+                        color: $secondaryFontColor;
+
+                        span {
+                            color: $secondaryFontColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "../../variables.scss";
+.containerForm {
+    .formHeading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2%;
+    }
+
+    .mainContainer {
+        display: flex;
+        justify-content: space-between;
+        .cardLeft {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            padding: $offSetLevel_3;
+            min-width: 400px;
+            label {
+                font-family: $Inter;
+                font-style: normal;
+                font-weight: $Medium;
+                font-size: $thirdLevelSize;
+                line-height: $LineLower;
+                text-transform: capitalize;
+                color: $secondaryFontColor;
+                margin-bottom: 8px;
+            }
+            input {
+                width: 100%;
+                padding: $offSetLevel_3 - 5 5px;
+                margin-bottom: $offSetLevel_3;
+                background-color: #f0f0f6;
+            }
+            textarea {
+                width: 400px;
+                height: 210px;
+                margin-bottom: 34px;
+                padding: 5px;
+                border-color: transparent;
+                background-color: #f0f0f6;
+                resize: none;
+            }
+            button {
+                width: 160px;
+                height: 35px;
+                background-color: $primaryColor;
+                font-family: $Inter;
+                font-size: $fourthLevelSize;
+                font-weight: $SemiBold;
+                opacity: 0.8;
+                border-color: transparent;
+                cursor: pointer;
+            }
+            button:hover {
+                opacity: 1;
+                // background-color: #27ae60;
+                
+            }
+        }
+        .mainCard {
+            display: flex;
+            flex-direction: column;
+            gap: $offSetLevel_3;
+            min-width: 370px;
+            .cardRight {
+                padding: 5%;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                img {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto $offSetLevel_3;
+                }
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $offSetLevel_2;
+                    font-family: $Inter;
+                    font-style: normal;
+                    font-weight: $Medium;
+                    font-size: $thirdLevelSize;
+                    line-height: $LineLower;
+                    text-transform: capitalize;
+                    color: $secondaryFontColor;
+                    span {
+                        font-family: $Inter;
+                        font-style: normal;
+                        font-weight: $RegularNormal;
+                        font-size: $fourthLevelSize;
+                        line-height: $LinMedium;
+                        text-transform: capitalize;
+                        color: $secondaryFontColor;
+                    }
+                }
+            }
+        }
+    }
+}

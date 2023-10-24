@@ -1,0 +1,24 @@
+@import "../LeftScss/../../variables.scss";
+
+.socIcons {
+    display: flex;
+    justify-content: space-around;
+    padding: $offSetLevel_3 - 10 0 $offSetLevel_3;
+    border-bottom: 1px solid #f0f0f6;
+    .iconDiv {
+        background-color: $primaryColor;
+        padding: 10px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        img {
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+    }
+    .iconDiv:hover {
+        // background-color: #3e8e41;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,47 @@
+@import '../LeftScss/../../variables.scss';
+
+
+.sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding: $offSetLevel_3 $offSetLevel_3 * 2;
+    height: fit-content;
+    transition-duration: .5s;
+    box-shadow: 5px 0 10px -6px $white ;
+
+    .arrow {
+        display: none;
+
+    }
+
+    @media (max-width: $smDesktop) {
+        padding: $offSetLevel_2 $offSetLevel_3;
+    }
+
+    @media (max-width: $xsDesktop) {
+        z-index: 100;
+        position: absolute;
+
+        .arrow {
+            content: '>';
+            display: block;
+            position: absolute;
+            top: 50vh;
+            right: -$offSetLevel_3*2;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: .5s;
+            padding: $offSetLevel_3;
+
+            &:hover {
+                scale: 1.2;
+            }
+
+            @media (max-width: $xsTablet) {
+                padding: $offSetLevel_1;
+                right: -$offSetLevel_3 - 10;
+            }
+        }
+    }
+}

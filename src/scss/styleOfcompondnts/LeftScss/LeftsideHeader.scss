@@ -1,0 +1,35 @@
+@import "../LeftScss/../../variables.scss";
+
+.sidebarHead {
+    max-width: 150px;
+    margin: 0 auto;
+    .photoWrapper {
+        position: relative;
+        margin-bottom: $offSetLevel_3;
+        .personImage {
+            border-radius: 50%;
+            display: block;
+            width: 100%;
+        }
+        .statusIndicator {
+            position: absolute;
+            right: 5%;
+            bottom: 13%;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            border-radius: 50%;
+            &.available {
+                background-color: $available;
+            }
+            &.busy {
+                background-color: $busy;
+            }
+        }
+    }
+
+    .fullname {
+        font-weight: bold;
+    }
+}

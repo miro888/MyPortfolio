@@ -1,0 +1,40 @@
+
+@import '../LeftScss/../../variables.scss';
+
+.skillsInfo {
+    margin-bottom: $offSetLevel_3;
+    padding-bottom: $offSetLevel_3;
+    border-bottom: 1.5px solid #f0f0f6;
+    h2 {
+        font-size: $thirdLevelSize;
+        color: $primaryFontColor;
+    }
+    .extraSkils {
+        font-size: $fourthLevelSize;
+        color: $secondaryFontColor;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid $primaryColor;
+        #square {
+            margin-right: 15px;
+        }
+    }
+    .lang {
+        font-size: $fourthLevelSize;
+        color: $secondaryFontColor;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        .languageLevel {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+        }
+    }
+}

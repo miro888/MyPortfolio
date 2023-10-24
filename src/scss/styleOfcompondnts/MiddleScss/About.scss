@@ -1,0 +1,166 @@
+@import "../MiddleScss/../../variables.scss";
+@import '../../animations.scss';
+
+.about {
+    display: flex;
+    background-color: $white;
+    padding: $offSetLevel_3;
+    position: relative;
+    margin-bottom: $offSetLevel_3 * 3;
+    z-index: 2;
+
+    .infoWrapper {
+        width: 60%;
+        z-index: 2;
+
+        @media (max-width: $smTablet) {
+            width: 100%;
+        }
+
+        @media (max-width: $xsDesktop) {
+            padding: 3rem;
+        }
+
+        h1 {
+            margin-top: $offSetLevel_3 * 3;
+            margin-bottom: $offSetLevel_3;
+            font-size: $firstLevelSize;
+            text-transform: capitalize;
+            z-index: 2;
+
+            .h2style {
+                color: $primaryColor;
+                z-index: 2;
+            }
+
+            @media (max-width: $smDesktop) {
+                margin-top: 0;
+                font-size: $secoundLevelSize;
+            }
+
+            @media (max-width: $xsDesktop) {
+                font-size: $thirdLevelSize + 10;
+            }
+
+            @media (max-width: $xsTablet) {
+                font-size: $thirdLevelSize;
+            }
+        }
+
+        p {
+            color: $secondaryFontColor;
+            font-size: $regular;
+            padding-bottom: 25px;
+            background-color: white;
+            z-index: 5;
+
+            @media (max-width: $smDesktop) {
+                font-size: $fourthLevelSize;
+            }
+
+        }
+
+        button[type="submit"] {
+            position: relative;
+            z-index: 2;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5%;
+            color: $primaryFontColor;
+            background-color: $primaryColor;
+            opacity: 0.8;
+            z-index: 2;
+            cursor: pointer;
+
+            @media (max-width: $xsTablet) {
+                font-size: $regular - 4;
+                position: absolute;
+                bottom: $offSetLevel_2;
+                left: $offSetLevel_2;
+                margin-left: 1rem;
+            }
+
+            .arrow {
+                padding-left: 11px;
+            }
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+    }
+
+    .imageDiv {
+
+        @media (prefers-reduced-motion: no-preference) {
+            .app-logo {
+                animation: App-logo-spin infinite 20s linear;
+            }
+
+        }
+
+        @media (max-width: $smTablet) {
+            align-self: center;
+        }
+
+        @media (max-width: $xsTablet) {
+            align-self: flex-start;
+            padding: 3rem;
+        }
+
+        img {
+            position: absolute;
+            z-index: 2;
+            top: 6rem;
+            max-height: 100%;
+            max-width: 500px;
+
+            @media (max-width: $smTablet) {
+                position: static;
+                max-width: 200px;
+            }
+        }
+
+    }
+
+    .shape {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        z-index: 1;
+        border: 2px solid transparent;
+    }
+
+    .square {
+        transform: rotate(26deg);
+    }
+
+    .circle {
+        border-radius: 50%;
+    }
+
+    @media (max-width: $smTablet) {
+        padding: $offSetLevel_2;
+        flex-direction: column;
+    }
+
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.shake-animation {
+    animation: skew-y-shakeing .8s infinite;
+    z-index: -1;
+    @media (max-width: $xsTablet) {
+        display: none;
+    }
+}

@@ -1,0 +1,64 @@
+@import "../LeftScss/../../variables.scss";
+.personInfo {
+    padding-top: $offSetLevel_3;
+    padding-bottom: $offSetLevel_3;
+    border-bottom: 1.5px solid #f0f0f6;
+    .personInfoDiv {
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+        .ageInfo,
+        .residenceInfo,
+        .freelanceInfo,
+        .addressInfo,
+        .jobInfo {
+            padding-right: 7px;
+            color: $primaryFontColor;
+            background-color: $primaryColor;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .ageInfo,
+        .residenceInfo,
+        .addressInfo {
+            font-size: $fourthLevelSize;
+            color: $primaryFontColor;
+        }
+        .freelanceStyle {
+            font-size: $fourthLevelSize;
+            text-transform: capitalize;
+            &.available {
+                text-shadow: 0px 2px 2px $available; 
+                color: $available;
+                animation: blink 2s infinite ease-in-out;
+            }
+            &.busy {
+                color: $busy;
+                text-shadow: 0px 2px 2px $busy; 
+            }
+        }
+    }
+    .freelanceInfo {
+        color: $primaryFontColor;
+        background-color: $primaryColor;
+
+        height: 24px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .addressInfo {
+        color: $primaryFontColor;
+        background-color: $primaryColor;
+        height: 24px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .jobInfo {
+        color: $primaryFontColor;
+        background-color: $primaryColor;
+        height: 24px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

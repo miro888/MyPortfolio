@@ -1,0 +1,30 @@
+@import "./variables.scss";
+.app {
+    background-color: $backColor;
+    display: grid;
+    grid-template-areas: 
+    "sidebarLeft middle sideBarRight";
+    gap: $offSetLevel_3;
+    transition: .3s;
+    @media (max-width: $xsDesktop) {
+        grid-template-columns: auto auto auto;
+    }
+    @media (max-width: $smTablet) {
+        gap: $offSetLevel_2;
+    }
+    @media (max-width: $xsTablet) {
+        padding-bottom: $offSetLevel_3;
+    }
+}
+.middle {
+    grid-area: middle;
+}
+.sidebarLeft{
+    grid-area: sidebarLeft;
+}
+.sideBarRight {
+    grid-area: sideBarRight;
+}
+html {
+    scroll-behavior: smooth;
+}
